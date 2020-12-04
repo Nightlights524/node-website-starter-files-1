@@ -4,7 +4,7 @@
   "description": "A simple website built with Node, Express and Pug",
   "main": "server.js",
   "scripts": {
-    "start": ""
+    "start": "npx nodemon server.js"
   },
   "author": "Ayo Isaiah",
   "license": "MIT",
@@ -13,6 +13,7 @@
     "pug": "^2.0.3"
   },
   "devDependencies": {
+    "eslint": "^7.14.0",
     "nodemon": "^1.19.0"
   }
 }
