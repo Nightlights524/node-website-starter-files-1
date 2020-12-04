@@ -15,6 +15,14 @@ app.get("/", (request, response) => {
   });
 });
 
+app.get('/profile', (request, response) => {
+  const person = people.profiles.find(p => p.id === request.query.id);
+  response.render('profile', {
+    title: `About ${person.firstname} ${person.lastname}`,
+    person
+  });
+});
+
 const server = app.listen(7000, () => {
   console.log(`Express running → PORT ${server.address().port}`);
 });
